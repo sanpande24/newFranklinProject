@@ -1,0 +1,428 @@
+#custom-search {
+    display: block;
+    padding: 5px;
+    float: right;
+    margin: -7px 0 0 15px;
+    order: 1;
+}
+
+#custom-search.active {
+    border-color: #ccc
+}
+
+#custom-search span {
+    cursor: pointer
+}
+
+#custom-search span:hover {
+    color: #d7792a
+}
+
+.mobile-search {
+    display: none!important;
+}
+
+body.mmg-search-active {
+    height: 100% !important;
+    overflow: hidden !important
+}
+
+.active#mmg-gcse {
+    visibility: visible;
+    opacity: 1
+}
+
+#custom-search-2 {
+    background-color: #fff;
+    float: left;
+    width: 225px;
+    margin-top: 10px;
+    height: 36px;
+    border: 1px solid #aebac0;
+    box-sizing: border-box
+}
+
+#custom-search-2 span {
+    cursor: pointer;
+    float: right;
+    margin: 7px 6px 0 0
+}
+
+#mmg-gcse .close-btn {
+    font-family: "Times New Roman", Times, serif;
+    float: right;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    font-size: 35px;
+    line-height: 34px;
+    background-color: #51585b;
+    color: #aebac0;
+    border: 1px solid #aebac0;
+    cursor: pointer
+}
+
+#mmg-gcse .close-btn:hover {
+    background-color: #aebac0;
+    color: #51585b
+}
+
+#mmg-gcse-box {
+    color: #fff;
+    font-size: 15px;
+    line-height: 140%;
+    height: calc(100vh - 100px);
+    width: 100%;
+    overflow: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+#mmg-gcse-box .mmg-gcse-outer {
+    padding: 40px 0
+}
+
+#mmg-gcse .search-unified {
+    display: block;
+    padding: 0 0 15px;
+    font-size: 16px;
+    color: white
+}
+
+#mmg-gcse .search-unified a {
+    font-size: 16px;
+    color: yellow
+}
+
+#mmg-gcse .search-title {
+    padding: 0 0 5px;
+    font-size: 32px;
+    color: inherit
+}
+
+#mmg-gcse .mmg-gcse-blogonly-text {
+    color: #aebac0
+}
+
+#mmg-gcse .search-info {
+    padding-bottom: 1.5em
+}
+
+#mmg-gcse .item {
+    display: block;
+    padding: .6em 0;
+    color: #aebac0;
+    transition: all .3s;
+    text-decoration: none
+}
+
+#mmg-gcse .item:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+#mmg-gcse .item .title {
+    font-family: "TradeGothicBoldCn20", Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+    line-height: 100%
+}
+
+#mmg-gcse .item:hover .title {
+    text-decoration: underline
+}
+
+#mmg-gcse .item br {
+    display: none
+}
+
+#mmg-gcse .item b,
+#mmg-gcse .item strong {
+    color: #fac922;
+    font-weight: normal
+}
+
+#mmg-gcse .pagination {
+    padding: 1.5em 0 0;
+    text-align: left
+}
+
+#mmg-gcse .pagination span {
+    cursor: pointer;
+    color: #aebac0;
+    padding: 0 5px
+}
+
+#mmg-gcse .pagination span:hover,
+#mmg-gcse .pagination span.active {
+    color: #fff
+}
+
+#mmg-gcse .pagination span.disabled,
+#mmg-gcse .pagination span.disabled:hover {
+    cursor: auto;
+    color: #fff
+}
+
+#mmg-gcse-blog form {
+    padding: .6em 0
+}
+
+#mmg-gcse-blog span {
+    float: right;
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    box-sizing: border-box;
+    height: 38px;
+    line-height: 38px
+}
+
+@media(max-width: 1024px) {
+    #mmg-gcse-tools {
+        padding-right: 0
+    }
+}
+
+@media(max-width: 960px) {
+    #mmg-gcse {
+        top: 50px;
+        z-index: 101
+    }
+
+    #mmg-gcse-tools {
+        padding: 0;
+        top: 0;
+        right: 51px;
+        width: 50px;
+        height: 50px
+    }
+
+    #mmg-gcse-tools .mmg-gcse-outer {
+        padding: 0;
+        width: 50px
+    }
+
+    #mmg-gcse .close-btn {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: none;
+        font-size: 50px;
+        line-height: 50px;
+        color: #fff;
+        background-color: #5f6669
+    }
+
+    #custom-search {
+        position: absolute;
+        top: 0;
+        right: 52px;
+        z-index: 2;
+        border-width: 0;
+        border-radius: 0;
+        background-color: #d8d8d8;
+        padding: 0;
+        margin: 0;
+        height: 50px;
+        box-sizing: border-box
+    }
+
+    #custom-search span {
+        width: 50px;
+        height: 48px;
+        font-size: 22px;
+        line-height: 48px;
+        float: right;
+        color: #767a7f;
+        text-align: center
+    }
+
+    .mobile-search {
+        display: block!important;
+    }
+}
+
+.coveo-search-dropdown.custom-search.mobile-search {
+    position: absolute !important;
+    right: 3rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.coveo-search-dropdown {
+    max-width: 16rem;
+    height: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    position: relative;
+    margin: 0;
+    order: 1;
+}
+
+.coveo-search-dropdown > div.coveo-searchbox {
+    width: 100%;
+    height: inherit;
+    position: relative;
+}
+ 
+.coveo-search-dropdown > div.coveo-searchbox input.coveo-search {
+    width: 16rem;
+    height: 100%;
+    display: block;
+
+    --tw-text-opacity: 1;
+
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.375rem 0.625rem;
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+
+    --tw-border-opacity: 1;
+
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+    border-width: 1px;
+    border-radius: 0.25rem;
+}
+
+.coveo-search-dropdown.mobile-search > div.coveo-searchbox input.coveo-search {
+    width: 12rem !important;
+}
+
+.coveo-search-dropdown > div.coveo-searchbox input.coveo-search:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
+    --tw-border-opacity: 1;
+
+    border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.coveo-search-dropdown > div.coveo-searchbox input.coveo-search + div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    inset-inline-end: 0;
+    padding-inline-end: 0.75rem;
+    cursor: pointer;
+}
+ 
+.coveo-search-dropdown > div.coveo-searchbox input.coveo-search + div svg {
+    width: 1rem;
+    height: 1rem;
+    fill: none;
+}
+ 
+.coveo-search-dropdown > div.coveo-search-dropdown-menu {
+    position: absolute;
+    width: 93%;
+
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+    z-index: 10;
+    padding: 0.5rem;
+}
+
+@media(max-width: 820px) {
+    .coveo-search-dropdown > div.coveo-search-dropdown-menu {
+        width: 91%;
+    }
+}
+
+.coveo-search-dropdown > div.coveo-search-dropdown-menu:not(.show) {
+    display: none;
+    padding: 0 !important;
+}
+ 
+.coveo-search-dropdown > div.coveo-search-dropdown-menu.show {
+    display: block;
+}
+ 
+.coveo-search-dropdown > div.coveo-search-dropdown-menu ul {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(55 65 81);
+    padding: 0;
+    user-select: none;
+}
+ 
+.coveo-search-dropdown > div.coveo-search-dropdown-menu ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+ 
+.coveo-search-dropdown > div.coveo-search-dropdown-menu ul li:hover {
+    background-color: rgb(243 244 246);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.coveo-search-dropdown > div.coveo-search-dropdown-menu ul li svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    fill: currentcolor;
+}
+
+.all-recent-searches {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.recent-searches {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: .75rem;
+    color: #767a7f;
+}
+
+.clear-recent-searches {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: pointer;
+    color: #767a7f;
+}
+
+div.all-recent-searches ul:empty ~ * {
+    display: none;
+}
+
+.coveo-search-dropdown > div.coveo-search-dropdown-menu:has(ul.suggestions:empty) {
+    display: none;
+    padding: 0 !important;
+}
