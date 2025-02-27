@@ -1,1 +1,119 @@
 /* add global styles that can be loaded post LCP here */
+/* lazy stylesheet */
+@font-face {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459830/b109e194-c563-4a1e-aa7b-0ab12434b83e.eot#iefix");
+    src: local("Helvetica Regular"), url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459830/b109e194-c563-4a1e-aa7b-0ab12434b83e.eot#iefix") format("eot"),
+        url("../fonts/helvetica/3515325d-15bc-419d-968e-43418f451aaa.woff2") format("woff2"),
+        url("../fonts/helvetica/bc088f61-8899-441a-ab5e-3ac46628a6c2.woff") format("woff"),
+        url("../fonts/helvetica/1cdae131-41b6-42fc-9a56-3906eace46c4.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459832/2f5c8674-96c6-4e6f-af67-8154b447387b.eot#iefix");
+    src: local("Helvetica Oblique"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459832/2f5c8674-96c6-4e6f-af67-8154b447387b.eot#iefix") format("eot"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459832/9a88e029-5825-47fc-978e-7a43e7e95419.woff2") format("woff2"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459832/7439e4f8-ae0d-4a6d-a5f7-3e23128b930f.woff") format("woff"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459832/19d99cc2-023c-4dee-a8af-5e33496d725c.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459834/0d0cf487-b97e-4a3b-811b-a5ff4d2f3a8f.eot#iefix");
+    src: local("Helvetica Bold"), url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459834/0d0cf487-b97e-4a3b-811b-a5ff4d2f3a8f.eot#iefix") format("eot"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459834/2044ee80-fba8-4c91-87df-4995217f48fa.woff2") format("woff2"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459834/441c2010-55ff-472f-b9d7-5469164a8430.woff") format("woff"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/helvetica/1459834/0eb195a7-b0e3-4a07-99da-9f08b2ec9864.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Proxima Nova A";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/reg/96676c88-bae1-468a-acf5-fa74fdb2b736.eot#iefix");
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/reg/96676c88-bae1-468a-acf5-fa74fdb2b736.eot#iefix") format("eot"),
+        url("../fonts/proxima/reg/a7333c48-140e-4bcb-a574-a2dcfcd4a621.woff2") format("woff2"),
+        url("../fonts/proxima/reg/dba0fe51-98c1-4045-b289-c0e6afb10f73.woff") format("woff"),
+        url("../fonts/proxima/reg/14c284c3-7a50-4ef0-becf-c01232631f59.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Proxima Nova A";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/italic/926e8ba2-1161-42b7-a850-c56765e872fd.eot#iefix");
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/italic/926e8ba2-1161-42b7-a850-c56765e872fd.eot#iefix") format("eot"),
+        url("../fonts/proxima/italic/09a1d106-4ddc-4781-bbaa-ca99d410f96c.woff2") format("woff2"),
+        url("../fonts/proxima/italic/cf7ea09d-4129-4178-be10-46690a910bc6.woff") format("woff"),
+        url("../fonts/proxima/italic/155079dd-36cb-4995-8ced-3fc104e75028.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Proxima Nova A";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/bold/cb0a2948-31e1-4f3e-8df8-f8fed5125537.eot#iefix");
+    src: url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/bold/cb0a2948-31e1-4f3e-8df8-f8fed5125537.eot#iefix") format("eot"),
+        url("../fonts/proxima/bold/8666e3e0-713e-463a-8bb9-2d3c6b8050b1.woff2") format("woff2"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/bold/b28633d8-c94c-4a40-8eb1-1e0b32ea0e06.woff") format("woff"),
+        url("//1769030.fs1.hubspotusercontent-na1.net/hubfs/1769030/aldevron_template/fonts/proxima/bold/0ec7744d-038f-46bd-a3a8-f3e0020ab4b8.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Brown-Ald;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("../fonts/brown/lineto-brown-light.eot");
+    src: url("../fonts/brown/lineto-brown-light.eot#iefix") format("embedded-opentype"),
+        url("../fonts/brown/lineto-brown-light.woff") format("woff"),
+        url("../fonts/brown/lineto-brown-light.svg#lineto-brown-light") format("svg")
+}
+
+@font-face {
+    font-family: Brown-Ald;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/brown/lineto-brown-regular.eot");
+    src: url("../fonts/brown/lineto-brown-regular.eot#iefix") format("embedded-opentype"),
+        url("../fonts/brown/lineto-brown-regular.woff") format("woff"),
+        url("../fonts/brown/lineto-brown-regular.svg#lineto-brown-regular") format("svg")
+}
+
+@font-face {
+    font-family: Brown-Ald;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/brown/lineto-brown-bold.eot");
+    src: url("../fonts/brown/lineto-brown-bold.eot#iefix") format("embedded-opentype"),
+        url("../fonts/brown/lineto-brown-bold.woff") format("woff"),
+        url("../fonts/brown/lineto-brown-bold.svg#lineto-brown-bold") format("svg")
+}
+
+@font-face {
+    font-family: ald-icons;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/ald-icons.eot?dgljk");
+    src: url("../fonts/ald-icons.eot?dgljk#iefix") format("embedded-opentype"),
+        url("../fonts/ald-icons.ttf?dgljk") format("truetype"),
+        url("../fonts/ald-icons.woff?dgljk") format("woff"),
+        url("../fonts/ald-icons.svg?dgljk#ald-icons") format("svg")
+}
